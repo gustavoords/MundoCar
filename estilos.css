@@ -1,0 +1,39 @@
+html,body{margin: 0; height: 100%; background-color: #ddd}
+.loja{
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 5%;
+    float: left;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+.select{
+    float: left;
+}
+.ajustar{
+    float: right;
+    width: 15%;
+    margin: 5px;
+}
+.buscar{
+    background-color: white;
+    width: 100%;
+    height: 28px;
+    border: 1px solid lightgray;
+    transition-duration: 0.3s;
+}
+.buscar:hover{
+    background-color: lightgray;
+}
+.imagens_carros{
+    margin-top: 5%;
+    float: left;
+    border: 1px solid black;
+    width: 50%;
+    margin-left: 25%;
+}
+.tamanho_imagem{
+    width: 200px;
+    height: 150px;
+    border: 1px solid black;
+}
