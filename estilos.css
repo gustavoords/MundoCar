@@ -12,8 +12,14 @@ html,body{margin: 0; height: 100%; background-color: #ddd}
 }
 .ajustar{
     float: right;
-    width: 15%;
+    width: 15%;  
     margin: 5px;
+}
+
+.small-12 columns{
+    float: right;
+    width: 15%;  
+    margin: 5px;    
 }
 .buscar{
     background-color: white;
@@ -36,4 +42,39 @@ html,body{margin: 0; height: 100%; background-color: #ddd}
     width: 200px;
     height: 150px;
     border: 1px solid black;
+}
+.loja_imagens{
+    float: left;
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 5px;
+    border-left: 3px solid #333;
+    border-right: 3px solid #333;
+}
+.text_d_loja{
+    width: 50%;
+    margin-left: 25%;
+    text-align: center;
+    margin-top: 5px;
+}
+.form_contato{
+    margin-top: 51px;
+    width: 40%;
+    float: left;
+    margin-left: 30%;
+}
+.nome_contato{
+    width: 100%;
+    border: 2px solid black;
+}
+.telefone_contato{
+    width: 100%;
+    color: black;
+   
+}
+
+.ComoChegar{
+    width: 400px;
+    
+    
 }

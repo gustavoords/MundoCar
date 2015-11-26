@@ -3,15 +3,12 @@
        <link rel="stylesheet" href="/Estilo.css" />
         <link rel="stylesheet" href="/css/normalize.css" />
         <link rel="stylesheet" href="/icons/foundation-icons.css" />
+        
             <?php
    session_start(); 
-
-include_once("Global.php");
-include_once("Footer.php");
-include_once("Header.php");
-include_once("Menu.php");
-
-        
+   include_once 'Menu.php';
+   include_once 'include/Global.php.php';
+   
 if(
         isset($_POST['Nome']) and
         isset($_POST['Valor']) and
@@ -50,9 +47,8 @@ $sql = "INSERT INTO cadastrar (Nome, Valor, Quantidade, Data) VALUES (:Nome, :Va
                                  </div>?>
                              <?php }
                              else{    //este else fecha la embaixo
-                                        ?> }
-                                        
-                                        56
+                                        ?> 
+                                       
         
         
         <?php     if(isset($msg)){ ?>
@@ -69,7 +65,7 @@ $sql = "INSERT INTO cadastrar (Nome, Valor, Quantidade, Data) VALUES (:Nome, :Va
      
      
       <center>
-        <font class="Titulo" >Cadastro de Produtos </font> </br>
+        <font class="Titulo" >Cadastro de Carros </font> </br>
         </br>
         <div class="large-3 large-centered columns">
             <form method="post">

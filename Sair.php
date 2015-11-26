@@ -11,6 +11,6 @@ $_SESSION['suporte'] = null;
 
 unlink($_SESSION);
 
-header("Location: /Inicial.php");
+header("Location: /Login.php");
 
 session_destroy();

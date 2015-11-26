@@ -1,9 +1,9 @@
 <?php
     session_start();
 include_once("include/Global.php");
-include_once("include/Footer.php");
-include_once("include/Header.php");
-//include_once("include/Menu.php");
+
+
+
    
       
     if(isset($_SESSION['usuario'])){
@@ -22,21 +22,19 @@ include_once("include/Header.php");
             $linha = $preparo->fetch(PDO::FETCH_ASSOC);
             $_SESSION['usuario'] = $linha;
         }
-        }
-        elseif(
-        !isset($_SESSION['usuario']) and empty  ($_SESSION['usuario'])
-        ){
-            $msg = "Usuario ou Senha InvÃ¡lidos";
-        }else{
+        
+      
+        
+        else
+            $msg = "Usuario ou Senha Inválidos";
             
-            if(isset($_SESSION['usuario'])){
-                header("Location: /index.php");
-            }
+        
         }
+         include_once ("include/Header.php"); 
     
 ?>
 
-<?php include_once ("include/Header.php"); ?>
+
 
 <?php  if(isset($msg)){ ?>
     <div data-alert class="alert-box alert">
@@ -67,3 +65,4 @@ include_once("include/Header.php");
 
 
 <?php include_once ("include/Footer.php"); ?>
+
